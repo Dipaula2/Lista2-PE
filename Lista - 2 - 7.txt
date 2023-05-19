@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// FunÃ§Ã£o que recebe um parÃ¢metro por valor
+void passarValor(int num) {
+    num += 10;  // Modifica apenas o valor local da variÃ¡vel num
+    printf("Dentro da funÃ§Ã£o (por valor): %d\n", num);
+}
+
+// FunÃ§Ã£o que recebe um parÃ¢metro por referÃªncia
+void passarReferencia(int *list) {
+    list[3] = 4;  // Modifica o objeto referenciado pela lista
+    printf("Dentro da funÃ§Ã£o (por referÃªncia): %d\n", list[3]);
+}
+
+int main() {
+    // Exemplo de passagem por valor
+    int x = 5;
+    printf("Antes da funÃ§Ã£o (por valor): %d\n", x);
+    passarValor(x);
+    printf("Depois da funÃ§Ã£o (por valor): %d\n", x);
+    printf("\n");
+
+    // Exemplo de passagem por referÃªncia
+    int *lista = (int *) malloc(4 * sizeof(int));
+    lista[0] = 1;
+    lista[1] = 2;
+    lista[2] = 3;
+    printf("Antes da funÃ§Ã£o (por referÃªncia): %d\n", lista[3]);
+    passarReferencia(lista);
+    printf("Depois da funÃ§Ã£o (por referÃªncia): %d\n", lista[3]);
+    free(lista);
+    return 0;
+}
