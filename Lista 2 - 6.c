@@ -5,9 +5,9 @@ int main() {
     int* ponteiro = &valor; 
 
     printf("Valor: %d\n",valor);
-    printf("EndereÃ§o: %p\n", &valor);
-    printf("Valor atravÃ©s do ponteiro: %d\n", *ponteiro);
-    printf("EndereÃ§o do ponteiro: %p\n", ponteiro);
+    printf("Endereco: %p\n", &valor);
+    printf("Valor atraves do ponteiro: %d\n", *ponteiro);
+    printf("Endereco do ponteiro: %p\n", ponteiro);
 
     *ponteiro = 100; 
 
