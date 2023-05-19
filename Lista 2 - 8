@@ -1,0 +1,7 @@
+Tipos de dados abstratos (ADTs) são um conceito fundamental em ciência da computação e programação. Eles fornecem uma maneira consistente de organizar e empacotar dados e atividades relacionadas em uma estrutura independente da implementação subjacente.
+
+Um TDA é uma abstração que define um novo tipo de dado em um programa. Ele especifica quais operações podem ser executadas nesse tipo de dados, mas não detalha como essas operações são executadas. A separação entre interface (operações disponíveis) e implementação (detalhes internos) é chamada de encapsulamento.
+
+Ao usar um TDA, os desenvolvedores podem se concentrar em como usar e interagir com os dados sem se preocupar com as complexidades da implementação. Isso permite uma clara divisão de responsabilidades e facilita a reutilização de código.
+
+A principal vantagem dos TDAs é a abstração e modularidade que eles fornecem. Eles permitem que os programadores dividam um problema complexo em partes menores e mais gerenciáveis, cada uma com sua própria abstração de dados. Isso simplifica o processo de desenvolvimento, facilita a depuração e incentiva a reutilização do código.
